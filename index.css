@@ -1,0 +1,104 @@
+/*body color change*/
+body{
+    background: rgb(227,238,238);
+    background: linear-gradient(90deg, rgba(227,238,238,1) 0%, rgba(14,201,236,1) 0%, rgba(154,160,231,1) 0%, rgba(22,6,241,1) 100%, rgba(0,212,255,1) 100%);
+}
+/*some work with H1 ,H2, H3 headline*/
+.title {
+        font-size: 40px;
+        text-align: center;
+        font-weight: bold;
+        color:white;
+        padding-bottom: 5px;
+        font-family: Times New Roman;
+    }
+.alert {
+        font-size: 40px;
+        text-align: center;
+        font-weight: bold;
+        color:white;
+        padding-bottom: 5px;
+        font-family: Times New Roman;
+    }
+.do {
+        font-size: 40px;
+        text-align: center;
+        font-weight: bold;
+        color:white;
+        padding-bottom: 5px;
+        font-family: Times New Roman;
+    }
+    /*some work animation H1 ,H2, H3 headline*/
+#one {
+        animation-name: text;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+    }
+ #two { 
+        animation-name: alert;
+        animation-duration: 6s;
+        animation-iteration-count: 1;
+    }
+#three {
+        animation-name: do;
+        animation-duration: 7s;
+        animation-iteration-count: 1;
+    }
+
+
+
+
+
+
+@keyframes text {
+        from {
+            margin-top: 400px;
+        }
+        to {
+            margin-top: 0px;
+        }
+    }
+    @keyframes alert {
+        from {
+            margin-top: 400px;
+        }
+        to {
+            margin-top: 0px;
+        }
+    }
+    @keyframes do {
+        from {
+            margin-top: 400px;
+        }
+        to {
+            margin-top: 0px;
+        }
+    }
+/*the animation i had done in h1, h2, h3 ,also working in the input, submit, output &footer. I don't know how? */
+    /*the unnecessary arrow animation*/
+.arrow-6 {
+        width:50px;
+        height:60px;
+        display: grid;
+        
+      }
+.arrow-6:before,
+.arrow-6:after {
+        content: "";
+        background:
+          linear-gradient(90deg,currentColor calc(100% - 15px),#0000 0) 0 50%/100% 10px,
+          conic-gradient(from -136deg at 15px 50%,#0000 ,currentColor 1deg 90deg,#0000 91deg) 35px 0/100% 100%;
+        background-repeat: repeat-x;
+        animation: a6 1s infinite;
+      }
+.arrow-6:after {
+        transform: scaleX(-1);
+      }
+      
+ @keyframes a6 {
+        80%,100%{background-position: 50px 50%,85px 0}
+      }
+
+      
+
+
